@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* Css Document */
+body
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu_bar{
+  height:80px;
+  width: 100%;
+  background-color: #333333;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo{ margin-top: -10px;}
+  .logo img{
+    height: 100px;
+  }
+  .menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+  }
+  .menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  .menu li:hover a{
+    color: #333333;
+    background-color: white;
+  }
