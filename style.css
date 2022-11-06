@@ -38,7 +38,7 @@ body{
     color: #333333;
     background-color: white;
   }
-
+.menu i{display: none;}
   /* GALERİ ALANI KODLARI*/
   .galeri {
     background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),
@@ -110,7 +110,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height:45vh;
+  height:50vh;
   background-color: #171717;
   color:white;
 }
@@ -129,12 +129,48 @@ body{
   font-size: 40px;
   border-top: 1px solid grey;
 }
-.alt_alan .sosyal a{
-  margin: 20px;
-  color: grey;
-  }
+.alt_alan i{ margin: 20px;}
+.alt_alan a{ color: grey;}
+
 .sosyal a:nth-child(1):hover{color: blue;}
 .sosyal a:nth-child(2):hover{color: aqua;}
 .sosyal a:nth-child(3):hover{color: #E15958;}
 .sosyal a:nth-child(4):hover{color: #D8090D;}
 .sosyal a:nth-child(5):hover{color: #26E038;}
+
+/* TABLET GÖRÜNÜMÜ */
+@media only screen and  (max-width:992px){
+.orta_alan{ flex-wrap:wrap;}
+.orta{ width:48%;}
+.orta img{ width: 30%;}
+}
+/* MOBİL GÖRÜNÜMÜ */
+@media only screen and  (max-width:768px){
+/* MENU RESPONSIVE KODLARI */
+.menu_bar{justify-content: space-between;}
+.menu_bar .logo{margin-left: 10%}
+.menu_bar .menu{margin-right: 10%}
+.menu ul{display: none;}
+.menu i{display: block;
+cursor: pointer;
+color: white;
+font-size: 30px;
+border: 1px solid white;
+padding: 5px;
+border-radius: 15%;
+margin-top: 50%;
+}
+/* ORTA ALAN RESPONSIVE KODLARI */
+.orta {width: 100%}
+.orta .icerik{flex-direction: row;}
+.icerik img,h3,p{padding: 1%;}
+/* ALT ALAN RESPONSIVE KODLARI */
+.alt_alan{height: 120vh;}
+.alt_alan .icerik{
+display: flex;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+}
